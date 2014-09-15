@@ -2165,6 +2165,10 @@ class FilterTest(unittest.TestCase):
         e, r = expect(FILTER_CASE_21), reality(FILTER_CASE_21)
         self.assertEqual(e, r, '\nexpect: {0}\n reality: {1}'.format(e, r))
 
+    def filter_platform_id(self):
+        e, r = expect(FILTER_CASE_22), reality(FILTER_CASE_22)
+        self.assertEqual(e, r, '\nexpect: {0}\n reality: {1}'.format(e, r))
+
 class TopnTest(unittest.TestCase):
 
     def setUp(self):
@@ -40649,7 +40653,7 @@ if __name__ == '__main__':
         testsuite.addTest(GroupTest(case))
 
 
-    filename = '/home/jeff/dianyi/Mercurial/mercurial/output/result.html'
+    filename = '../report/result.html'
     fp = file(filename, 'wb')
 
     runner = HTMLTestRunner.HTMLTestRunner(

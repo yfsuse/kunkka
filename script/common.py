@@ -36,6 +36,8 @@ def get_serverdata(querydata):
     except AttributeError as e:
         return None
 
+    return data
+
 
 def hround(num, prc=3):
     strnum = repr(num)
